@@ -207,65 +207,7 @@ jQuery(function ($) {
 
 
 
-    (function () {
-        $('.popup-video').magnificPopup({
-            disableOn: 700,
-            type: 'iframe',
-            mainClass: 'mfp-with-zoom',
-            removalDelay: 300,
-            preloader: false,
-            fixedContentPos: false
-        });
-    }());
 
-
-
-
-
-    // -------------------------------------------------------------
-    // Fit Vids
-    // -------------------------------------------------------------
-    (function () {
-        $(".video-container").fitVids();
-    }());
-
-
-
-   
-
-
-
-    // -------------------------------------------------------------
-    // STELLAR FOR BACKGROUND SCROLLING
-    // -------------------------------------------------------------
-
-    $(window).load(function() {
-
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-         
-        }else {
-            $.stellar({
-                horizontalScrolling: false,
-                responsive: true
-            });
-        }
-
-    });
-
-
-    // -------------------------------------------------------------
-    // WOW JS
-    // -------------------------------------------------------------
-
-    (function () {
-
-        new WOW({
-
-            mobile:  false
-
-        }).init();
-
-    }());
 
 
 
