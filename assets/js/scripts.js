@@ -204,6 +204,38 @@ jQuery(function ($) {
       });
 
     }());
+    
+    // -------------------------------------------------------------
+    // STELLAR FOR BACKGROUND SCROLLING
+    // -------------------------------------------------------------
+
+    $(window).load(function() {
+
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+         
+        }else {
+            $.stellar({
+                horizontalScrolling: false,
+                responsive: true
+            });
+        }
+
+    });
+
+
+    // -------------------------------------------------------------
+    // WOW JS
+    // -------------------------------------------------------------
+
+    (function () {
+
+        new WOW({
+
+            mobile:  false
+
+        }).init();
+
+    }());
 
 
 
